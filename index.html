@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一处安静的起点 · 乐鱼体育</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fde9d7 0%, #f6d5b3 60%, #efc9a3 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.25rem;
+      color: #3b2e23;
+      line-height: 1.7;
+    }
+
+    .page-card {
+      max-width: 780px;
+      width: 100%;
+      background: rgba(255, 252, 246, 0.92);
+      backdrop-filter: blur(2px);
+      border-radius: 36px;
+      padding: 2.8rem 2.5rem 3rem;
+      box-shadow: 0 20px 40px -12px rgba(140, 90, 50, 0.25);
+      transition: box-shadow 0.25s ease;
+    }
+
+    @media (max-width: 540px) {
+      body {
+        padding: 1.2rem 0.9rem;
+      }
+      .page-card {
+        padding: 2rem 1.4rem 2.4rem;
+        border-radius: 28px;
+      }
+    }
+
+    .hero-text {
+      font-size: 1.6rem;
+      font-weight: 380;
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+      margin: 0 0 0.5rem 0;
+      color: #3b2e23;
+      border-left: 4px solid #dbaa7b;
+      padding-left: 1.2rem;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: #6f5542;
+      margin-bottom: 2rem;
+      font-weight: 340;
+    }
+
+    .intro-paragraph {
+      margin: 1.8rem 0 1.6rem;
+      font-size: 1.03rem;
+    }
+
+    .intro-paragraph p {
+      margin-bottom: 1.2rem;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.3rem;
+      margin: 2rem 0 2.2rem;
+    }
+
+    .feature-item {
+      flex: 1 1 180px;
+      background: #fffaf3;
+      border-radius: 24px;
+      padding: 1.3rem 1.2rem 1.1rem;
+      box-shadow: 0 4px 10px rgba(170, 120, 80, 0.06);
+      border: 1px solid #ece0d2;
+    }
+
+    .feature-item h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #4f3929;
+    }
+
+    .feature-item p {
+      font-size: 0.94rem;
+      color: #5f4b3b;
+    }
+
+    .scene-note {
+      background: #f7ede2;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin: 2rem 0 1.8rem;
+      border-left: 3px solid #cda07a;
+    }
+
+    .scene-note p {
+      margin-bottom: 0.5rem;
+    }
+
+    .inline-link {
+      color: #8f5f3b;
+      text-decoration: none;
+      font-weight: 480;
+      padding-bottom: 1px;
+      border-bottom: 1.5px solid #dbb390;
+      transition: border-color 0.2s, color 0.2s;
+      border-radius: 0;
+    }
+
+    .inline-link:hover {
+      color: #6b4329;
+      border-bottom-color: #8f5f3b;
+    }
+
+    .button-like-link {
+      display: inline-block;
+      background: #e4cbb6;
+      color: #2f2219;
+      text-decoration: none;
+      padding: 0.6rem 1.6rem;
+      border-radius: 40px;
+      font-weight: 390;
+      font-size: 0.95rem;
+      border: 1px solid #dbb08c;
+      transition: background 0.2s, box-shadow 0.15s;
+      box-shadow: 0 2px 6px rgba(150, 100, 60, 0.06);
+    }
+
+    .button-like-link:hover {
+      background: #dbb394;
+      box-shadow: 0 4px 12px rgba(150, 100, 60, 0.12);
+    }
+
+    .gentle-closing {
+      margin-top: 2.8rem;
+      padding-top: 1.4rem;
+      border-top: 1px dashed #dac2ae;
+      font-size: 0.98rem;
+      color: #5a4738;
+    }
+
+    .faq-mini {
+      margin: 2.2rem 0 0.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.6rem;
+    }
+
+    .faq-mini summary {
+      cursor: default;
+      font-weight: 400;
+      color: #5a4030;
+      margin-bottom: 0.1rem;
+    }
+
+    .faq-mini details {
+      flex: 1 1 200px;
+    }
+
+    .faq-mini details p {
+      font-size: 0.9rem;
+      color: #5d4b3c;
+      margin-top: 0.2rem;
+      padding-left: 0.2rem;
+    }
+
+    .footnote {
+      margin-top: 2rem;
+      font-size: 0.82rem;
+      color: #7d6858;
+      text-align: center;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-card">
+    <div class="hero-text">
+      有时只是需要一个安静的起点。
+    </div>
+    <div class="hero-sub">
+      不绕路，不堆砌，从一处简单的页面开始。
+    </div>
+
+    <div class="intro-paragraph">
+      <p>
+        很多次打开一个网站，迎面而来的是弹窗、轮播和密集的跳转指引。但并不是每一次都需要热闹的引导——有时候你只是想找一个稳定的位置，知道某个服务就在那里，页面干净、入口明确，就够了。
+      </p>
+      <p>
+        这个页面是为 <a href="https://site-index-leyu.com.cn" class="inline-link">乐鱼体育</a> 准备的简介。它不承担复杂的导航，更像一张安静的名片：告诉你这个站点的存在，以及它大概提供什么。如果你已经在别处听说过它，这里可以作为一个轻量的确认。
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>· 指向清晰</h3>
+        <p>页面结构简单，主要链接一目了然，不需要反复寻找。</p>
+      </div>
+      <div class="feature-item">
+        <h3>· 保持稳定</h3>
+        <p>内容更新平缓，入口长期有效，适合收藏或备忘。</p>
+      </div>
+      <div class="feature-item">
+        <h3>· 叙述克制</h3>
+        <p>不使用浮夸的标语，只用平实的段落说明站点性质。</p>
+      </div>
+    </div>
+
+    <div class="scene-note">
+      <p><strong>一个可能的场景</strong></p>
+      <p>你正在和朋友聊起体育相关的线上社区，有人提到了一个名字。你想先看一眼它的主页风格，再决定是否深入了解。这时一个干净、带有简短介绍的页面，会比直接跳转到功能页更从容。这个页面就是为这种「先看看」的时刻准备的。</p>
+    </div>
+
+    <div style="margin: 1.6rem 0 1.2rem; display: flex; justify-content: center;">
+      <a href="https://site-index-leyu.com.cn" class="button-like-link">乐鱼体育</a>
+    </div>
+    <p style="text-align: center; font-size: 0.93rem; color: #635141;">
+      （上面这个圆角按钮就是指向站点的链接，文本只有名称）
+    </p>
+
+    <details class="faq-mini" style="margin-top: 2.4rem;">
+      <summary style="list-style: none; cursor: pointer; font-weight: 400; color: #5a4030;">
+        <span style="border-bottom: 1px dotted #c8ae96;">▸ 几个简短的问题（FAQ 摘要）</span>
+      </summary>
+      <div style="margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.7rem;">
+        <details>
+          <summary>这个页面是官方网站吗？</summary>
+          <p>不是。这是一个独立的介绍页，目的是提供关于 <a href="https://site-index-leyu.com.cn" class="inline-link">乐鱼体育</a> 的概括性说明，并放置指向该站点的链接。你可以把它看作一个安静的索引。</p>
+        </details>
+        <details>
+          <summary>页面上的链接会变化吗？</summary>
+          <p>链接指向固定的站点地址，如果未来有调整，这里会同步更新。目前保持稳定。</p>
+        </details>
+        <details>
+          <summary>为什么页面设计这么朴素？</summary>
+          <p>我们希望减少视觉干扰，让注意力回到内容本身。暖色背景和白色卡片营造柔和的阅读氛围，也符合「温和起点」的定位。</p>
+        </details>
+      </div>
+    </details>
+
+    <div class="gentle-closing">
+      <p>一个入口的意义有时不在于它通往多大的世界，而在于它始终在那里，不吵不闹。如果你需要了解 <a href="https://site-index-leyu.com.cn" class="inline-link">乐鱼体育</a>，这个页面可以作为你的第一站。记住链接，或者收藏它——下次再来时，它还会是现在的样子。</p>
+    </div>
+
+    <div class="footnote">
+      <span>—— 叙述式介绍页 · 暖色背景 · 2025 ——</span>
+    </div>
+  </div>
+</body>
+</html>
